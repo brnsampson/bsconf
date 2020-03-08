@@ -79,7 +79,7 @@ Vagrant.configure("2") do |config|
     # Get the actual project code and build the container
     go get -u github.com/spf13/cobra/cobra
     go get -u github.com/brnsampson/bsconf
-    mkdir -p /etc/bsconf
+    sudo mkdir -p /etc/bsconf
     ln -s /home/vagrant/go/src/github.com/brnsampson/bsconf /home/vagrant/bsconf
 
     # Any development environment setup
